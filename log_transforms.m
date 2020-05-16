@@ -5,19 +5,7 @@ c = 2;
 f = c*log(1 + (a)); 
 subplot(3,2,1),imshow(a1),title('Original Image');
 subplot(3,2,2),imshow((f)),title('Log Transformation Image');
- 
-%Histogram Eq
-Y = imread('panda.jpg');
-Z = histeq(Y);
-subplot(3,2,3);
-imshow( Y );
-subplot(3,2,4);
-imhist(Y);
-subplot(3,2,5);
-imshow( Z );
-subplot(3,2,6);
-imhist(Z)
- 
+  
 %Inverse Log Transform
 figure;
 L = 256;
