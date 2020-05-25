@@ -1,5 +1,5 @@
 %Log Transform
-a1 = imread('lena.jpg'); 
+a1 = imread('/Images/lena.jpg'); 
 a = double(a1)/255; %normalize
 c = 2; 
 f = c*log(1 + (a)); 
@@ -9,7 +9,7 @@ subplot(3,2,2),imshow((f)),title('Log Transformation Image');
 %Inverse Log Transform
 figure;
 L = 256;
-I = imread('cameraman.jpg');
+I = imread('/Images/cameraman.jpg');
 log_I = uint8(log(double(I)+1) .* ((L - 1)/log(L)));
 exp_I = uint8((exp(double(I)) .^ (log(L) / (L-1))) - 1);
 subplot(2, 2, [1 2]); imshow(I); title('Input');
