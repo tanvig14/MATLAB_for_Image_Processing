@@ -1,5 +1,5 @@
 %Histogram Eq
-Y = imread('panda.jpg');
+Y = imread('/Images/panda.jpg');
 Z = histeq(Y);
 subplot(3,2,3);
 imshow( Y );
