@@ -1,5 +1,5 @@
 %Median pass filter to remove salt and pepper noise
-p = imread('cameraman.jpg');
+p = imread('/Images/cameraman.jpg');
 q = rgb2gray(p);
 r = imnoise(q, 'salt & pepper', 0.02);
 P = medfilt2(r);
@@ -10,7 +10,7 @@ subplot(2,2,2);
 imshow(q);
  
 %Laplacian filter
-a=imread('panda.jpg');
+a=imread('/Images/panda.jpg');
 a=rgb2gray(a);
 [r c]=size(a)
 a=im2double(a);
@@ -40,7 +40,7 @@ subplot(2,2,4)
 imshow(result);
 
 %Sobel    
-    newImg = imread('lena.jpg');
+    newImg = imread('/Images/lena.jpg');
     I = rgb2gray(newImg)
     subplot(3,2,1);
     imshow(I);
@@ -50,7 +50,7 @@ imshow(result);
     imshow(BW);
     
 %Prewitts
-    newImg1 = imread('monkey.jpg');
+    newImg1 = imread('/Images/monkey.jpg');
     grayImage= rgb2gray(newImg1)
     subplot(3,2,3);
     imshow(grayImage);
@@ -59,7 +59,7 @@ imshow(result);
     imshow(afterFilter);
     
 %Roberts
-    newImg2 = imread('cameraman.jpg');
+    newImg2 = imread('/Images/cameraman.jpg');
     grayImage= rgb2gray(newImg2)
     subplot(3,2,5);
     imshow(grayImage);
