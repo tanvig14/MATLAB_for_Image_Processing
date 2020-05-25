@@ -1,5 +1,5 @@
 %Flip LR
-x = imread('einstein.jpg');
+x = imread('/Images/einstein.jpg');
 a = rgb2gray(x);
 subplot(4,2,1);
 imshow(a);
@@ -8,7 +8,7 @@ subplot(4,2,2);
 imshow(b);
  
 %Increase brightness
-y = imread('lena.jpg');
+y = imread('/Images/lena.jpg');
 c = rgb2gray(y);
 subplot(4,2,3);
 imshow(c);
@@ -17,7 +17,7 @@ subplot(4,2,4);
 imshow(d);
  
 %Complement of image
-z = imread('panda.jpg');
+z = imread('/Images/panda.jpg');
 e = rgb2gray(z);
 subplot(4,2,5);
 imshow(e);
@@ -26,7 +26,7 @@ subplot(4,2,6);
 imshow(f);
  
 %Adjust image brightness
-p = imread('monkey.jpg');
+p = imread('/Images/monkey.jpg');
 q = rgb2gray(p);
 subplot(4,2,7);
 imshow(q);
